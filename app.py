@@ -43,7 +43,7 @@ st.subheader("Enter Property Details")
 
 area_type = st.selectbox("Area Type", ["Built-up Area", "Plot Area", "Super Built-up Area", "Carpet Area"])
 availability = st.selectbox("Availability", ["Ready to Move", "Under Construction"])
-location = st.text_input("Location", "Enter the location")
+location = st.text_input("Location", "Enter the location").strip()
 size = st.text_input("Size", "Enter size (e.g., 2 BHK, 3 BHK)")
 society = st.text_input("Society", "Enter society name")
 total_sqft = st.number_input("Total Area (sqft)", min_value=0.0, step=1.0)
